@@ -1,7 +1,7 @@
 javascript_piano
 ================
 
-A piano built in js
+A piano built in js/jquery
 
 To run:
 
