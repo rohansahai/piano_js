@@ -127,7 +127,6 @@ function doKeyUp(e){
 function PlayAudio(keyVal){
 	if (keyVal==97){
 		audioElement1.currentTime=0;
-		audioElement1.load;
 		audioElement1.play();
 		if (level==1){
 		document.getElementById('key1').style.backgroundColor = '#D1F2A5';
@@ -136,7 +135,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==115){
 		audioElement2.currentTime=0;
-		audioElement2.load;
 		audioElement2.play();
 		if (level==1){
 		document.getElementById('key2').style.backgroundColor = '#EFFAB4';
@@ -145,7 +143,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==100){
 		audioElement3.currentTime=0;
-		audioElement3.load;
 		audioElement3.play();
 		if (level==1){
 		document.getElementById('key3').style.backgroundColor = '#FFC48C';
@@ -154,7 +151,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==102){
 		audioElement4.currentTime=0;
-		audioElement4.load;
 		audioElement4.play();
 		if (level==1){
 		document.getElementById('key4').style.backgroundColor = '#FF9F80';
@@ -163,7 +159,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==103){
 		audioElement5.currentTime=0;
-		audioElement5.load;
 		audioElement5.play();
 		if (level==1){
 		document.getElementById('key5').style.backgroundColor = '#F56991';
@@ -172,7 +167,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==104){
 		audioElement6.currentTime=0;
-		audioElement6.load;
 		audioElement6.play();
 		if (level==1){
 		document.getElementById('key6').style.backgroundColor = '#A7DBD8';
@@ -181,7 +175,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==106){
 		audioElement7.currentTime=0;
-		audioElement7.load;
 		audioElement7.play();
 		if (level==1){
 		document.getElementById('key7').style.backgroundColor = '#69D2E7';
@@ -190,7 +183,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==107){
 		audioElement8.currentTime=0;
-		audioElement8.load;
 		audioElement8.play();
 		if (level==1){
 		document.getElementById('key8').style.backgroundColor = '#D1F2A5';
@@ -199,7 +191,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==119){
 		audioElement1_5.currentTime=0;
-		audioElement1_5.load;
 		audioElement1_5.play();
 		if (level==1){
 		document.getElementById('blackKey1').style.backgroundColor = '#0DB2AC';
@@ -208,7 +199,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==101){
 		audioElement2_5.currentTime=0;
-		audioElement2_5.load;
 		audioElement2_5.play();
 		if (level==1){
 		document.getElementById('blackKey2').style.backgroundColor = '#F5DD7E';
@@ -217,7 +207,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==116){
 		audioElement4_5.currentTime=0;
-		audioElement4_5.load;
 		audioElement4_5.play();
 		if (level==1){
 		document.getElementById('blackKey3').style.backgroundColor = '#FC8D4D';
@@ -226,7 +215,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==121){
 		audioElement5_5.currentTime=0;
-		audioElement5_5.load;
 		audioElement5_5.play();
 		if (level==1){
 		document.getElementById('blackKey4').style.backgroundColor = '#FC694D';
@@ -235,7 +223,6 @@ function PlayAudio(keyVal){
 	
 	if (keyVal==117){
 		audioElement6_5.currentTime=0;
-		audioElement6_5.load;
 		audioElement6_5.play();
 		if (level==1){
 		document.getElementById('blackKey5').style.backgroundColor = '#FABA32';
@@ -549,13 +536,8 @@ function intervalTest(levelCheck){
 }
 
 function Answer(answer){
-	//var answer = $("input[name='dinner']:checked").val();
 	if(answer==semitone){
-		//alert('correct');
 		right=right+1;
-	}
-	else{
-		
 	}
 	total=total+1;
 	percentage=(right/total)*100;
